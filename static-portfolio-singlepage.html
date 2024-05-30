@@ -32,6 +32,34 @@
         }
         h2 {
             color: #4b0082;
+            border-bottom: 2px solid #e6e6fa;
+            padding-bottom: 0.5em;
+        }
+        h3 {
+            color: #4b0082;
+            margin-top: 0;
+        }
+        h4 {
+            color: #6a5acd;
+            margin-bottom: 0.5em;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 1em;
+            padding-left: 1.5em;
+            position: relative;
+        }
+        ul li:before {
+            content: "▪";
+            color: #4b0082;
+            position: absolute;
+            left: 0;
+        }
+        p {
+            margin: 0.5em 0;
         }
         footer {
             background-color: #e6e6fa;
@@ -57,58 +85,113 @@
         .contact-form button:hover {
             background-color: #3a0066;
         }
-    </style>
+        .experience {
+            margin-bottom: 2em;
+        }
+        .company-name {
+            font-weight: bold;
+            color: #4b0082;
+        }
+        .job-duration {
+            font-style: italic;
+            color: #6a5acd;
+            margin-left: 10px;
+        }
+        .hobbies {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .hobby {
+            flex: 1 1 30%;
+            display: flex;
+            align-items: center;
+            margin-bottom: 1em;
+        }
+        .hobby-icon {
+            font-size: 2em;
+            margin-right: 0.5em;
+        }
+        .hobby-name {
+            font-weight: bold;
+            color: #4b0082;
+        }
+    </style>    
+     
 </head>
 <body>
     <header>
         <h1>Emanuele Giuseppe Cannella</h1>
-        <p>Professionista in cerca di nuove opportunità lavorative</p>
+        <p>Portfolio riassuntivo minimale</p>
     </header>
 
     <div class="container">
         <section>
             <h2>Chi Sono</h2>
-            <p>[Breve descrizione su di te]</p>
+            <p><b>Consulente di Business Intelligence</b> e <b>Sviluppatore Software</b> presso <b>Sopra Steria Group S.P.A.</b>, mi distinguo per la mia ampia esperienza nello sviluppo di soluzioni BI per il settore finanziario in Emilia-Romagna. La mia expertise copre una varietà di linguaggi di programmazione, inclusi <b>C/C#, Python e JavaScript</b>, con una predilezione per <b>Java</b> nell'ambito dello sviluppo di portali e applicazioni aziendali. Sono esperto nell'utilizzo di tecnologie avanzate quali <b>Azure, REST/SOAP APIs, ESB Services e framework di sviluppo Front-End e Back-End</b>, che mi consentono di navigare con successo le sfide del settore.</p>
+            <br><p>Nel corso della mia carriera, ho gestito <i>progetti in tutte le loro fasi: dall'analisi e modellazione dei dati, allo sviluppo, testing, documentazione e deployment</i>. Eccello nell'<b>interfacciamento con i clienti</b>, garantendo una comunicazione chiara ed efficace, e nel monitoraggio e reporting dello stato di avanzamento dei progetti, identificando tempestivamente eventuali criticità. Vanto inoltre una solida esperienza nella realizzazione di <b>processi ETL/ELT</b>, avvalendomi di tecnologie come <b>l'RDBMS Teradata</b> per la gestione dei dati attraverso <b>SQL</b> e la <b>Suite IBM </b>(DataStage, Workload Scheduler, Data Architect, ecc.) per la pianificazione, il caricamento dei dati e la loro rappresentazione.</p>
+            <br><p>La mia <b>passione</b> per il settore mi spinge costantemente alla ricerca di nuove sfide e all'apprendimento di nuove tecnologie, dimostrando una <b>rapida adattabilità</b> a diversi ambienti lavorativi. La mia <b>aspirazione</b> è quella di continuare a <i>migliorare le mie competenze</i> e di <i>offrire soluzioni di eccellenza</i> ai miei clienti.</p>
         </section>
 
         <section>
             <h2>Esperienze Lavorative</h2>
-            <ul>
-                <li><strong>Posizione 1</strong> - Azienda 1 (Anno - Anno)
-                    <p>Descrizione del lavoro e delle responsabilità.</p>
-                </li>
-                <li><strong>Posizione 2</strong> - Azienda 2 (Anno - Anno)
-                    <p>Descrizione del lavoro e delle responsabilità.</p>
-                </li>
-                <!-- Aggiungi altre esperienze lavorative come necessario -->
-            </ul>
+            <div class="experience">
+                <h3>
+                    <span class="company-name">Sopra Steria</span> 
+                    <span class="job-duration">(2019 - oggi)</span>
+                </h3>
+                <h4>Developer</h4>
+                <ul>
+                    <li>Creazione soluzioni Full Stack Web tramite Java (Vaadin, Spring, Hibernate, JDBC, Backbone, etc) e utilizzo di ulteriori Framework BackEnd e FrontEnd (Vue.js, React.js, Bootstrap)</li>
+                    <li>Sviluppo portali sotto forma di Single Page Application e applicativi interni (es. tramite JavaFX)</li>
+                    <li>Implementazione APIs in approcci Rest e Soap</li>
+                    <li>Continuous delivery e continuous integration tramite GitLab e Azure (git management, pipelines CI/CD, server deployment)</li>
+                    <li>Coordinamento e cooperazione di tutte le fasi di realizzazione progetto software</li>
+                </ul>
+                <h4>Business Intelligence Consultant</h4>
+                <ul>
+                    <li>Costruzione processi ETL e utilizzo strumenti legati (IBM DataStage, SQL avanzato tramite RBDMS Teradata, Suites IBM come WorkBench/Data Architect, Qlik Sense, ...)</li>
+                    <li>Comprensione modelli e logica di business del mondo Business Intelligence (DataVault, EDW, processi input/output, ...)</li>
+                    <li>Studio di fattibilità, stima a progetto, documentazione, rilascio</li>
+                    <li>Relazione con il cliente e con l’utenza finale</li>
+                </ul>
+            </div>
+            <div class="experience">
+                <h3>
+                    <span class="company-name">EasyTech and Omigrade</span> 
+                    <span class="job-duration">(2017 - 2018)</span>
+                </h3>
+                <ul>
+                    <li>Networking e sicurezza di rete</li>
+                    <li>Implementazione APIs in approcci Rest e Soap</li>
+                    <li>Assistenza tecnica clienti</li>
+                    <li>Gestione e creazione di Database e siti web di Ticketing</li>
+                </ul>
+            </div>
         </section>
-
-        <section>
-            <h2>Esperienze Extra</h2>
-            <ul>
-                <li><strong>Attività 1</strong> (Anno)
-                    <p>Descrizione dell'attività.</p>
-                </li>
-                <li><strong>Attività 2</strong> (Anno)
-                    <p>Descrizione dell'attività.</p>
-                </li>
-                <!-- Aggiungi altre esperienze extra come necessario -->
-            </ul>
-        </section>
-
+        
         <section>
             <h2>Hobby e Interessi</h2>
-            <ul>
-                <li>Hobby 1</li>
-                <li>Hobby 2</li>
-                <!-- Aggiungi altri hobby e interessi come necessario -->
-            </ul>
+            <div class="hobbies">
+                <div class="hobby">
+                    <span class="hobby-icon">🏋️‍♂️</span>
+                    <span class="hobby-name">Calysthenics</span>
+                </div>
+                <div class="hobby">
+                    <span class="hobby-icon">🎭</span>
+                    <span class="hobby-name">Teatro</span>
+                </div>
+                <div class="hobby">
+                    <span class="hobby-icon">💃</span>
+                    <span class="hobby-name">Boylesque</span>
+                </div>
+                <!-- Aggiungi altri hobby come necessario -->
+            </div>
         </section>
+        
 
         <section>
             <h2>Contattami</h2>
-            <form class="contact-form">
+            <form class="contact-form" action="mailto:emacannella@gmail.com" method="post" enctype="text/plain">
                 <input type="text" name="name" placeholder="Nome" required>
                 <input type="email" name="email" placeholder="Email" required>
                 <textarea name="message" rows="4" placeholder="Messaggio" required></textarea>
